@@ -37,10 +37,9 @@ body{
 }
 .meal-wrapper{
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
     background: #fff;
     text-align: center;
+
 }
 .meal-search{
     margin: 2rem 0;
@@ -85,11 +84,16 @@ body{
 .search-btn:hover{
     background: var(--tenne-tawny-dark);
 }
+
 .meal-result{
-    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 #meal{
-    margin: 2.4rem 0;
+    width: 500px;
 }
 .meal-item{
     border-radius: 1rem;
@@ -283,13 +287,12 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+   
 }
 
 @media screen and (min-width: 768px){
     #meal{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        width: 300px;
     }
     .meal-item{
         margin: 0;
@@ -300,7 +303,5 @@ body{
 }
 
 @media screen and (min-width: 992px){
-    #meal{
-        grid-template-columns: repeat(3, 1fr);
-    }
+   
 }
